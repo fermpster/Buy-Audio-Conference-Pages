@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="http://lightpathvideos.com/GAW/SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+<link href="http://lightpathvideos.com/GAW/SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="http://lightpathvideos.com/GAW/SpryAssets/SpryValidationRadio.css" rel="stylesheet" type="text/css" />
+
+<script src="http://lightpathvideos.com/GAW/SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<script src="http://lightpathvideos.com/GAW/SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="http://lightpathvideos.com/GAW/SpryAssets/SpryValidationRadio.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form>
+
+<input type="hidden" name="oid" value="00D30000000jZDG">
+<input type="hidden" name="retURL" value="https://golightpath.com/ac-thank-you">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="pjaenick@golightpath.com">                                       -->
+<!--  ----------------------------------------------------------------------  -->
+
+<span id="ValidRadio5">
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="Pay as you go" id="radio01">
+      Pay as you go</label>
+    <br>
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="2000" id="radio02">
+      2000</label>
+    <br>
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="5000" id="radio03">
+      5000</label>
+    <br>
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="10000" id="radio04">
+      10000</label>
+    <br>
+    <span class="radioRequiredMsg">Please make a selection.</span>
+  </span><br>
+
+<label for="first_name">*First Name</label><span id="sprytextfield1"><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please Enter First Name</span></span><br>
+
+
+<label for="last_name">*Last Name</label><span id="sprytextfield2"><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please Enter Last Name</span></span><br>
+
+
+<label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
+
+
+<label for="company">*Company</label><span id="sprytextfield4"><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please Enter Company Name</span></span><br>
+
+
+<label for="street">*Address</label><span id="sprytextarea1"><textarea name="street"></textarea><br>
+<span class="textareaRequiredMsg">Please enter an address</span></span><br>
+
+
+<label for="city">*City</label><span id="sprytextfield5"><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please Enter City</span></span><br>
+
+
+<label for="state">*State</label><span id="sprytextfield6"><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please<br />Enter State</span></span><br>
+
+
+<label for="zip">*ZIP</label><span id="sprytextfield7"><input id="zip" maxlength="20" name="zip" size="20" type="text"><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please Enter Zip</span></span><br>
+
+
+<label for="phone">*Phone</label><span id="sprytextfield8"><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please Enter Phone Number</span></span><br>
+
+
+<label for="email">*Email</label><span id="sprytextfield9"><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+<span class="textfieldRequiredMsg drkbkgrnd">*Please Enter Email Address</span><span class="textfieldInvalidFormatMsg drkbkgrnd">*Please Enter a Valid Email&nbsp;Address</span></span><br>
+
+
+<label>LP Account # <br>
+(if current customer)</label><input  id="00N30000004Yr63" maxlength="12" name="00N30000004Yr63" size="20" type="text" /><br>
+
+<span id="ValidRadio1">
+  <label><input type="radio" name="description" id="description" value="Agreed to Terms and Conditions"/>* Yes, I agree to the Service Agreement Terms and Conditions
+    New customers subject to credit approval</label><br>
+  <span class="radioRequiredMsg">*Please agree to the Service Agreement Terms and Conditions.</span>
+ </span><br>
+
+
+<input type="submit" name="submit">
+
+</form>
+
+<script type="text/javascript"> 
+var ac1 = new Spry.Widget.ValidationRadio("ValidRadio1",{isRequired:true, validateOn:['blur','change']}); 
+var ac2 = new Spry.Widget.ValidationRadio("ValidRadio5",{isRequired:true, validateOn:['blur','change']});
+   
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {validateOn:["blur", "change"]});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {validateOn:["blur", "change"]});
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "none", {validateOn:["blur", "change"]});
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "none", {validateOn:["blur", "change"]});
+
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {validateOn:["blur"]});
+
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5", "none", {validateOn:["blur", "change"]});
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6", "none", {validateOn:["blur", "change"]});
+var sprytextfield7 = new Spry.Widget.ValidationTextField("sprytextfield7", "none", {validateOn:["blur", "change"]});
+var sprytextfield8 = new Spry.Widget.ValidationTextField("sprytextfield8", "none", {validateOn:["blur", "change"]});
+var sprytextfield9 = new Spry.Widget.ValidationTextField("sprytextfield9", "email", {validateOn:["blur", "change"]});
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="SpryValidationRadio.css">
+<script src="SpryValidationRadio.js"></script>
+</head>
+
+<body>
+
+<form>
+
+<p id="ValidRadio5">
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="Pay as you go" id="radio01">
+      Pay as you go</label>
+    <br>
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="2000" id="radio02">
+      2000</label>
+    <br>
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="5000" id="radio03">
+      5000</label>
+    <br>
+    <label>
+      <input type="radio" name="00N30000004Yr5A" value="10000" id="radio04">
+      10000</label>
+    <br>
+    <span class="radioRequiredMsg">Please make a selection.</span>
+  </p>
+
+<span id="ValidRadio1">
+  <label><input type="radio" name="radio1" id="radio1" value="1"/>Test Radio</label>
+  <span class="radioRequiredMsg">Please make a selection.</span>
+ </span><br>
+ <input type="submit">
+</form>
+<script type="text/javascript"> 
+   var ac1 = new Spry.Widget.ValidationRadio("ValidRadio1",{isRequired:true, validateOn:['blur','change']}); 
+   var ac2 = new Spry.Widget.ValidationRadio("ValidRadio5",{isRequired:true, validateOn:['blur','change']});  
+</script>
+</body>
+</html>
